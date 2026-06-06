@@ -15,7 +15,6 @@ COPY scripts/update-klogsrv.sh /app/scripts/update-klogsrv.sh
 COPY scripts/update-shsrv.sh /app/scripts/update-shsrv.sh
 COPY scripts/update-gdbsrv.sh /app/scripts/update-gdbsrv.sh
 COPY scripts/update-ps5debug.sh /app/scripts/update-ps5debug.sh
-COPY scripts/update-elfldr.sh /app/scripts/update-elfldr.sh
 COPY scripts/update-ps5-linux-loader.sh /app/scripts/update-ps5-linux-loader.sh
 COPY scripts/update-browser-appcache-remove.sh /app/scripts/update-browser-appcache-remove.sh
 
@@ -28,7 +27,6 @@ RUN chmod +x /app/scripts/start.sh \
         /app/scripts/update-shsrv.sh \
         /app/scripts/update-gdbsrv.sh \
         /app/scripts/update-ps5debug.sh \
-        /app/scripts/update-elfldr.sh \
         /app/scripts/update-ps5-linux-loader.sh \
         /app/scripts/update-browser-appcache-remove.sh
 

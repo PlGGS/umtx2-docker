@@ -16,7 +16,6 @@ echo "Updating managed payloads..."
 /app/scripts/update-shsrv.sh
 /app/scripts/update-gdbsrv.sh
 /app/scripts/update-ps5debug.sh
-/app/scripts/update-elfldr.sh
 /app/scripts/update-ps5-linux-loader.sh
 /app/scripts/update-browser-appcache-remove.sh
 
