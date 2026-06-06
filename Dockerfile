@@ -8,8 +8,9 @@ RUN git clone https://github.com/idlesauce/umtx2.git .
 
 COPY scripts/start.sh /app/scripts/start.sh
 COPY scripts/update-etahen.sh /app/scripts/update-etahen.sh
+COPY scripts/update-kstuff.sh /app/scripts/update-kstuff.sh
 
-RUN chmod +x /app/scripts/start.sh /app/scripts/update-etahen.sh
+RUN chmod +x /app/scripts/start.sh /app/scripts/update-etahen.sh /app/scripts/update-kstuff.sh
 
 EXPOSE 53/udp 80 443
 

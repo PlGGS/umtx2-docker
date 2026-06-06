@@ -9,6 +9,7 @@ export APP_DIR PAYLOAD_DIR MAP_FILE
 
 echo "Updating managed payloads..."
 /app/scripts/update-etahen.sh
+/app/scripts/update-kstuff.sh
 
 if [ -z "${HOST_IP:-}" ]; then
   echo "ERROR: HOST_IP is not set"
