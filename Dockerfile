@@ -1,8 +1,6 @@
 FROM python:3.14.5-slim
 
-RUN apt-get update && \
-    apt-get install -y git && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y git && apt-get install -y curl jq && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 

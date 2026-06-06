@@ -6,6 +6,7 @@ services:
 
     environment:
       HOST_IP: "192.168.11.17"
+      AUTO_UPDATE_PAYLOADS: "true"
 
     ports:
       - "53:53/udp"
