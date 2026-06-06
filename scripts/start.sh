@@ -10,6 +10,15 @@ export APP_DIR PAYLOAD_DIR MAP_FILE
 echo "Updating managed payloads..."
 /app/scripts/update-etahen.sh
 /app/scripts/update-kstuff.sh
+/app/scripts/update-websrv.sh
+/app/scripts/update-ftpsrv.sh
+/app/scripts/update-klogsrv.sh
+/app/scripts/update-shsrv.sh
+/app/scripts/update-gdbsrv.sh
+/app/scripts/update-ps5debug.sh
+/app/scripts/update-elfldr.sh
+/app/scripts/update-ps5-linux-loader.sh
+/app/scripts/update-browser-appcache-remove.sh
 
 if [ -z "${HOST_IP:-}" ]; then
   echo "ERROR: HOST_IP is not set"
