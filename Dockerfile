@@ -6,9 +6,11 @@ WORKDIR /app
 
 RUN git clone https://github.com/idlesauce/umtx2.git .
 
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+COPY scripts/start.sh /app/scripts/start.sh
+COPY scripts/update-etahen.sh /app/scripts/update-etahen.sh
+
+RUN chmod +x /app/scripts/start.sh /app/scripts/update-etahen.sh
 
 EXPOSE 53/udp 80 443
 
-CMD ["/start.sh"]
+CMD ["/app/scripts/start.sh"]
